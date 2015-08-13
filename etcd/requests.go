@@ -46,6 +46,7 @@ func (c *Client) getCancelable(key string, options Options,
 	// the `consistent` query string.
 	if c.config.Consistency == STRONG_CONSISTENCY {
 		options["consistent"] = true
+		options["quorum"] = true
 	}
 
 	str, err := options.toParameters(VALID_GET_OPTIONS)

@@ -19,6 +19,7 @@ var (
 	VALID_GET_OPTIONS = validOptions{
 		"recursive":  reflect.Bool,
 		"consistent": reflect.Bool,
+		"quorum":     reflect.Bool,
 		"sorted":     reflect.Bool,
 		"wait":       reflect.Bool,
 		"waitIndex":  reflect.Uint64,
